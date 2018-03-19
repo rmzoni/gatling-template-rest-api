@@ -5,11 +5,12 @@ import io.gatling.http.Predef._
 import net.liftweb.json.Serialization
 import com.sysgears.example.rest.data.CustomerTestData._
 import scala.util.Random
+import io.gatling.core.scenario.Simulation
 
 /**
  * Load test for the rest service.
  */
-class CustomerSimulation extends io.gatling.core.scenario.Simulation with SimulationConfig {
+class CustomerSimulation extends Simulation with SimulationConfig {
 
   /**
    * http configuration.
